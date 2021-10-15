@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/nav_graph_input"
     app:startDestination="@id/inputFragment">
 
     <fragment
@@ -19,5 +19,16 @@
         android:id="@+id/registrationFragment"
         android:name="com.example.northbook.RegistrationFragment"
         android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_endRegistrationFragment"
+            app:destination="@id/endRegistrationFragment"
+            app:popUpTo="@+id/nav_graph_input"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/endRegistrationFragment"
+        android:name="com.example.northbook.EndRegistrationFragment"
+        android:label="fragment_end_registration"
+        tools:layout="@layout/fragment_end_registration" />
 </navigation>

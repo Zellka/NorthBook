@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toolbar
 import androidx.navigation.fragment.findNavController
 
@@ -23,6 +24,10 @@ class RegistrationFragment : Fragment() {
         view.findViewById<Toolbar>(R.id.fragment_registration_toolbar)
             .setNavigationOnClickListener {
                 findNavController().popBackStack()
+            }
+        view.findViewById<Button>(R.id.fragment_registration_button)
+            .setOnClickListener {
+                findNavController().navigate(R.id.action_registrationFragment_to_endRegistrationFragment)
             }
     }
 }
