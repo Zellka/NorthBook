@@ -15,4 +15,6 @@
     <dimen name="sirius_badge_radius">5dp</dimen>
     <dimen name="sirius_badge_diameter">10dp</dimen>
     <dimen name="li_operation_avatar_view_size">40dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

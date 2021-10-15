@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_books">
+
+    <fragment
+        android:id="@+id/navigation_books"
+        android:name="com.example.northbook.ui.menu.BooksFragment"
+        android:label="@string/title_books"
+        tools:layout="@layout/fragment_books" />
+
+    <fragment
+        android:id="@+id/navigation_plans"
+        android:name="com.example.northbook.ui.menu.PlansFragment"
+        android:label="@string/title_plans"
+        tools:layout="@layout/fragment_plans" />
+
+    <fragment
+        android:id="@+id/navigation_creation"
+        android:name="com.example.northbook.ui.menu.CreationFragment"
+        android:label="@string/title_creation"
+        tools:layout="@layout/fragment_creation" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.example.northbook.ui.menu.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.northbook.ui.menu.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

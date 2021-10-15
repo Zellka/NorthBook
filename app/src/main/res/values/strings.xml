@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">NorthBook</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_books">Books</string>
+    <string name="title_plans">Plans</string>
+    <string name="title_creation">Creation</string>
+    <string name="title_news">News</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Поиск</string>
+    <string name="hint_search">Введите что-нибудь</string>
+
+    <string name="tab_genres">Жанры</string>
+    <string name="tab_recom">Рекомендации</string>
+    <string name="tab_trends">Тренды</string>
 </resources>
