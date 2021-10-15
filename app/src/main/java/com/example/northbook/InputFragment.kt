@@ -24,7 +24,7 @@ class InputFragment : Fragment() {
         }
 
         view.findViewById<Button>(R.id.fragment_input_button).setOnClickListener {
-            findNavController().navigate(R.id.action_inputFragment_to_registrationFragment)
+            findNavController().navigate(R.id.action_inputFragment_to_checkFragment)
         }
     }
 }
