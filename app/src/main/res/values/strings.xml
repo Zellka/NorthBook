@@ -12,4 +12,23 @@
     <string name="tab_genres">Жанры</string>
     <string name="tab_recom">Рекомендации</string>
     <string name="tab_trends">Тренды</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="tab_description">Описание</string>
+    <string name="tab_review">Рецензии</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_to_book">Забронировать</string>
+    <string name="title_add">Добавить</string>
+    <string name="your_review">Ваша рецензия</string>
+    <string name="btn_send_review">Отправить</string>
+    <string name="title_activity_add_review">AddReviewActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hint_review">Напишите свою рецензию</string>
 </resources>
