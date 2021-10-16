@@ -25,7 +25,17 @@
         android:id="@+id/navigation_plans"
         android:name="com.example.northbook.ui.menu.PlansFragment"
         android:label="@string/title_plans"
-        tools:layout="@layout/fragment_plans" />
+        tools:layout="@layout/fragment_plans">
+        <action
+            android:id="@+id/action_plansFragment_to_goalFragment"
+            app:destination="@id/navigation_goal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_goal"
+        android:name="com.example.northbook.ui.menu.GoalFragment"
+        android:label="@string/title_goal"
+        tools:layout="@layout/fragment_goal" />
 
     <fragment
         android:id="@+id/navigation_creation"

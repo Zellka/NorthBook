@@ -2,27 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="100dp"
-    android:background="@color/white"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp">
-
-    <ImageView
-        android:id="@+id/img_book"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:src="@color/black"
-        tools:ignore="MissingConstraints" />
+    android:padding="10dp"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/name_book"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Название"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/img_book"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -30,18 +19,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Автор"
-        android:textColor="@color/gray"
-        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/name_book"
         tools:ignore="MissingConstraints" />
 
-    <RatingBar
-        android:id="@+id/rating_book"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/goal_read"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numStars="5"
+        android:text="10 страниц в день"
         app:layout_constraintTop_toBottomOf="@+id/author_book"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/goal_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="За 35 дней"
+        app:layout_constraintTop_toBottomOf="@+id/goal_read"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

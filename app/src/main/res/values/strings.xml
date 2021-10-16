@@ -8,6 +8,7 @@
     <string name="title_profile">Профиль</string>
     <string name="title_search">Поиск</string>
     <string name="title_genre">Жанр</string>
+    <string name="title_goal">Цель</string>
     <string name="hint_search">Введите что-нибудь</string>
 
     <string name="tab_genres">Жанры</string>
