@@ -10,7 +10,7 @@
     <string name="hint_search">Введите что-нибудь</string>
 
     <string name="tab_genres">Жанры</string>
-    <string name="tab_recom">Рекомендации</string>
+    <string name="tab_recom">Для тебя</string>
     <string name="tab_trends">Тренды</string>
     <string name="title_activity_book">BookActivity</string>
     <string name="tab_description">Описание</string>

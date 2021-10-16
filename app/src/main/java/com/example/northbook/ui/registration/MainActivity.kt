@@ -1,7 +1,8 @@
-package com.example.northbook
+package com.example.northbook.ui.registration
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.northbook.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
