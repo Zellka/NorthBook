@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NorthBook">
         <activity
+            android:name=".ui.events.AddEventActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.creat.NewBookActivity"
             android:exported="true" />
         <activity

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.registration.RegistrationFragment">
+
+    <Toolbar
+        android:id="@+id/tol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_arrow_left"
+        android:title="Организация мероприятия" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_registration_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Название"
+        android:textColorHint="@color/gray_light"
+        app:boxStrokeColor="@color/gray_light"
+        app:hintTextColor="@color/gray_light">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_registration_name_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColorHighlight="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_registration_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Описание"
+        android:textColorHint="@color/gray_light"
+        app:boxStrokeColor="@color/gray_light"
+        app:hintTextColor="@color/gray_light">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_registration_email_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColorHighlight="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/url_d"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Необходимое оборудование"
+        android:textColorHint="@color/gray_light"
+        app:boxStrokeColor="@color/gray_light"
+        app:hintTextColor="@color/gray_light">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/url_d_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColorHighlight="@color/gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_3"
+        android:layout_marginTop="@dimen/space_3"
+        android:layout_marginBottom="@dimen/space_3"
+        android:background="@color/purple_500"
+        android:padding="@dimen/space_3"
+        android:text="Отправить заявку"
+        android:textColor="@color/white" />
+</LinearLayout>
