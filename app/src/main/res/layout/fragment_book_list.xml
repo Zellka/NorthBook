@@ -4,14 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.book.ReviewFragment">
+    android:background="@color/white"
+    tools:context=".ui.category.BookListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_review"
+        android:id="@+id/recycler_book_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:listitem="@layout/item_review"
+        tools:listitem="@layout/item_book"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -7,6 +7,7 @@
     <string name="title_news">Новости</string>
     <string name="title_profile">Профиль</string>
     <string name="title_search">Поиск</string>
+    <string name="title_genre">Жанр</string>
     <string name="hint_search">Введите что-нибудь</string>
 
     <string name="tab_genres">Жанры</string>
@@ -17,8 +18,6 @@
     <string name="tab_review">Рецензии</string>
     <string name="chit_work">Работы читателей</string>
     <string name="my_work">Мои работы</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_to_book">Забронировать</string>
     <string name="title_add">Добавить</string>
     <string name="your_review">Ваша рецензия</string>
