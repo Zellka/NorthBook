@@ -12,4 +12,6 @@
     <string name="tab_genres">Жанры</string>
     <string name="tab_recom">Рекомендации</string>
     <string name="tab_trends">Тренды</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NorthBook">
         <activity
+            android:name=".ui.statistics.StatisticsActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.menu.MenuActivity"
             android:exported="true"
             android:label="@string/title_activity_menu" />
