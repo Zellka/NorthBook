@@ -31,7 +31,11 @@
         android:id="@+id/navigation_creation"
         android:name="com.example.northbook.ui.menu.CreationFragment"
         android:label="@string/title_creation"
-        tools:layout="@layout/fragment_creation" />
+        tools:layout="@layout/fragment_creation" >
+        <action
+            android:id="@+id/action_navigation_creation_to_newBookFragment"
+            app:destination="@id/newBookFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_news"
@@ -44,5 +48,10 @@
         android:name="com.example.northbook.ui.menu.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/newBookFragment"
+        android:name="com.example.northbook.ui.creat.NewBookFragment"
+        android:label="fragment_new_book"
+        tools:layout="@layout/fragment_new_book" />
 
 </navigation>
