@@ -2,6 +2,7 @@ package com.example.northbook.ui.menu
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.PagerAdapter
@@ -35,6 +36,7 @@ class BooksFragment : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.search_menu, menu)
+        (requireActivity() as AppCompatActivity).supportActionBar?.show()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

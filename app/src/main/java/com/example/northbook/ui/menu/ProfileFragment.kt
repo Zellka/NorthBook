@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.northbook.R
 import com.example.northbook.databinding.FragmentProfileBinding
 import com.example.northbook.ui.events.AddEventActivity
@@ -26,6 +27,7 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
         view.findViewById<Button>(R.id.button_stat).setOnClickListener {
             startActivity(Intent(activity, StatisticsActivity::class.java))
         }

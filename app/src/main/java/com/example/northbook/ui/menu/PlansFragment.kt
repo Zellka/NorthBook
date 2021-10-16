@@ -2,6 +2,7 @@ package com.example.northbook.ui.menu
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,6 +32,7 @@ class PlansFragment : Fragment(), GoalListener {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        (requireActivity() as AppCompatActivity).supportActionBar?.show()
         val goals = listOf<Goal>(
             Goal(R.drawable.book1,"Ход королевы", "У.Тевис", "10", "день", "10"),
             Goal(R.drawable.book2,"Снежная сказка", "А.Полярный", "50", "неделю", "30"),

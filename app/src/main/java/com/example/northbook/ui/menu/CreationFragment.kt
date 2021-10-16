@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.northbook.adapter.CreatPagerAdapter
 import com.example.northbook.adapter.SectionPagerAdapter
@@ -29,6 +30,7 @@ class CreationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.viewPager.adapter = CreatPagerAdapter(this.requireContext(), childFragmentManager)
         binding.tabsC.setupWithViewPager(binding.viewPager)
+        (requireActivity() as AppCompatActivity).supportActionBar?.show()
     }
 
     override fun onDestroyView() {
