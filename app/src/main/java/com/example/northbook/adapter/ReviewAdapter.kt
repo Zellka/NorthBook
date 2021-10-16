@@ -3,6 +3,7 @@ package com.example.northbook.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,7 +15,9 @@ class ReviewAdapter(var items: List<Review>) :
     RecyclerView.Adapter<ReviewAdapter.ReviewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        ReviewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_review, parent, false))
+        ReviewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.item_review, parent, false)
+        )
 
     override fun getItemCount() = items.size
 
@@ -26,10 +29,12 @@ class ReviewAdapter(var items: List<Review>) :
         private val authorReview = itemView.findViewById<TextView>(R.id.author_review)
         private val textReview = itemView.findViewById<TextView>(R.id.text_review)
         private val ratingReview = itemView.findViewById<RatingBar>(R.id.rating_review)
+        private val avatar = itemView.findViewById<ImageView>(R.id.avatar)
         fun bind(item: Review) {
             authorReview.text = item.author
             textReview.text = item.text
             ratingReview.numStars = item.rating
+            avatar.setImageResource(item.avatarAuthor)
         }
     }
 }

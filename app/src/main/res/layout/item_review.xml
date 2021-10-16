@@ -7,26 +7,49 @@
     android:background="@color/white"
     android:padding="10dp">
 
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ava1"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/author_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
         android:text="Фамилия Имя"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/avatar"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/date_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
         android:text="16 октября 2021"
-        app:layout_constraintTop_toBottomOf="@+id/author_review"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/author_review"
+        app:layout_constraintLeft_toRightOf="@+id/author_review"
+        app:layout_constraintTop_toTopOf="@+id/author_review"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jdafjaf asfnasfnasfna fjgfjaf asjfnasgfjasfa fajfafgjaf ajf afjaf af"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/avatar"
         app:layout_constraintTop_toBottomOf="@+id/date_review"
         tools:ignore="MissingConstraints" />
 
