@@ -1,6 +1,5 @@
 package com.example.northbook.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,15 +7,21 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.northbook.R
 
-class GenresAdapter(var items: List<String>) : RecyclerView.Adapter<GenresAdapter.GenresHolder>() {
+class GenresAdapter(var items: List<String>, private val listener: GenreListener) :
+    RecyclerView.Adapter<GenresAdapter.GenresHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        GenresHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_genre, parent, false))
+        GenresHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.item_genre, parent, false)
+        )
 
     override fun getItemCount() = items.size
 
     override fun onBindViewHolder(holder: GenresHolder, position: Int) {
         holder.bind(items[position])
+        holder.itemView.setOnClickListener {
+            listener.showBooks(items[position])
+        }
     }
 
     inner class GenresHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -25,4 +30,8 @@ class GenresAdapter(var items: List<String>) : RecyclerView.Adapter<GenresAdapte
             genre.text = item
         }
     }
+}
+
+interface GenreListener {
+    fun showBooks(genre: String)
 }
