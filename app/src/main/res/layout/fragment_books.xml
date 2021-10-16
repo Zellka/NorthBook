@@ -16,7 +16,6 @@
         app:tabSelectedTextColor="@color/black"
         tools:ignore="MissingConstraints" />
 
-
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_below="@+id/tabs"

@@ -16,7 +16,6 @@ class GenresAdapter(var items: List<String>) : RecyclerView.Adapter<GenresAdapte
     override fun getItemCount() = items.size
 
     override fun onBindViewHolder(holder: GenresHolder, position: Int) {
-        Log.d("AAAAAAAAAAAAA", "AAAAAAAAAAAAA")
         holder.bind(items[position])
     }
 
@@ -24,7 +23,6 @@ class GenresAdapter(var items: List<String>) : RecyclerView.Adapter<GenresAdapte
         private val genre = itemView.findViewById<TextView>(R.id.genre)
         fun bind(item: String) {
             genre.text = item
-            Log.d("FFFFFFFFFFFFFFF", "FFFFFFFFFFFFFF")
         }
     }
 }
