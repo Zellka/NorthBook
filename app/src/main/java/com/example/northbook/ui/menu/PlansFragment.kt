@@ -7,10 +7,11 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.northbook.R
 import com.example.northbook.adapter.GoalAdapter
+import com.example.northbook.adapter.GoalListener
 import com.example.northbook.databinding.FragmentPlansBinding
 import com.example.northbook.entity.Goal
 
-class PlansFragment : Fragment() {
+class PlansFragment : Fragment(), GoalListener {
 
     private var _binding: FragmentPlansBinding? = null
     private val binding get() = _binding!!
@@ -31,14 +32,13 @@ class PlansFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val goals = listOf<Goal>(
-            Goal("Название1", "Автор1", "10", "день", "год"),
-            Goal("Название1", "Автор1", "10", "день", "год"),
-            Goal("Название1", "Автор1", "10", "день", "год"),
-            Goal("Название1", "Автор1", "10", "день", "год"),
-            Goal("Название1", "Автор1", "10", "день", "год")
+            Goal(R.drawable.book1,"Ход королевы", "У.Тевис", "10", "день", "10"),
+            Goal(R.drawable.book2,"Снежная сказка", "А.Полярный", "50", "неделю", "30"),
+            Goal(R.drawable.book3,"Гарри Поттер", "Д.Роулинг", "10", "час", "8"),
+            Goal(R.drawable.book4,"Завтрак у Тиффани", "Т.Капоте", "20", "час", "20")
         )
         binding.recyclerGoal.layoutManager = LinearLayoutManager(this.requireContext())
-        binding.recyclerGoal.adapter = GoalAdapter(goals)
+        binding.recyclerGoal.adapter = GoalAdapter(goals, this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -46,17 +46,12 @@ class PlansFragment : Fragment() {
         inflater.inflate(R.menu.add_menu, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id = item.itemId
-
-        if (id == R.id.action_add) {
-            findNavController().navigate(R.id.action_plansFragment_to_goalFragment)
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun showGoal(goal: Goal) {
+        findNavController().navigate(R.id.action_plansFragment_to_goalFragment)
     }
 }

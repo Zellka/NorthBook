@@ -28,7 +28,7 @@ class MenuActivity : AppCompatActivity() {
                 R.id.navigation_books,
                 R.id.navigation_plans,
                 R.id.navigation_creation,
-                R.id.navigation_news,
+                R.id.navigation_event,
                 R.id.navigation_profile
             )
         )

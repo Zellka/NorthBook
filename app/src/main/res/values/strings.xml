@@ -4,7 +4,7 @@
     <string name="title_books">Книги</string>
     <string name="title_plans">Цели</string>
     <string name="title_creation">Творчество</string>
-    <string name="title_news">Новости</string>
+    <string name="title_event">Мероприятия</string>
     <string name="title_profile">Профиль</string>
     <string name="title_search">Поиск</string>
     <string name="title_genre">Жанр</string>
@@ -25,6 +25,4 @@
     <string name="btn_send_review">Отправить</string>
     <string name="title_activity_add_review">AddReviewActivity</string>
     <string name="hint_review">Напишите свою рецензию</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

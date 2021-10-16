@@ -48,10 +48,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_news"
-        android:name="com.example.northbook.ui.menu.NewsFragment"
-        android:label="@string/title_news"
-        tools:layout="@layout/fragment_news" />
+        android:id="@+id/navigation_event"
+        android:name="com.example.northbook.ui.menu.EventFragment"
+        android:label="@string/title_event"
+        tools:layout="@layout/fragment_event" />
 
     <fragment
         android:id="@+id/navigation_profile"
