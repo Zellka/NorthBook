@@ -56,6 +56,6 @@ class WorksReadersFragment : Fragment() , ClickListener {
     }
 
     override fun showBook(book: Book) {
-        startActivity(Intent(this.requireContext(), BookActivity::class.java))
+        startActivity(Intent(this.requireContext(), NewBookActivity::class.java))
     }
 }

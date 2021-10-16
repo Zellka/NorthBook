@@ -24,4 +24,6 @@
     <string name="btn_send_review">Отправить</string>
     <string name="title_activity_add_review">AddReviewActivity</string>
     <string name="hint_review">Напишите свою рецензию</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
