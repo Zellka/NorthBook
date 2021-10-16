@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.northbook.R
 import com.example.northbook.adapter.BookAdapter
 import com.example.northbook.adapter.ClickListener
 import com.example.northbook.databinding.FragmentRecomBinding
@@ -28,25 +29,31 @@ class RecomFragment : Fragment(), ClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val books = listOf<Book>(
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4)
+            Book("Над пропастью во ржи", "Д. Сэлинджер", 4),
+            Book("Игра в бисер", "Г. Гессе", 5),
+            Book("Мартин Иден", "Д. Лондон", 5),
+            Book("Так говорил Заратустра", "Ф. Ницше", 4),
+            Book("Щегол", "Д. Тартт", 4),
+            Book("Степной волк", "Г. Гесе", 5),
+            Book("Бесы", "Ф. Достоевский", 5),
+            Book("Марсианские хроники", "Р. Брэдбери", 5),
+            Book("Творцы совпадений", "Й. Блум", 4)
         )
+
+        val list = listOf<Int> (
+            R.drawable.b1,
+            R.drawable.b2,
+            R.drawable.b3,
+            R.drawable.b4,
+            R.drawable.b5,
+            R.drawable.b6,
+            R.drawable.b7,
+            R.drawable.b1,
+            R.drawable.b9
+        )
+
         binding.recyclerRecom.layoutManager = GridLayoutManager(this.requireContext(), 3)
-        binding.recyclerRecom.adapter = BookAdapter(books, this)
+        binding.recyclerRecom.adapter = BookAdapter(books, this,list)
     }
 
     override fun showBook(book: Book) {

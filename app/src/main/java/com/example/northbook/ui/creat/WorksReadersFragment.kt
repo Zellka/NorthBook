@@ -34,28 +34,34 @@ class WorksReadersFragment : Fragment() , ClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val books = listOf<Book>(
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4),
-            Book("Название1", "Автор1", 1),
-            Book("Название2", "Автор2", 2),
-            Book("Название3", "Автор3", 3),
-            Book("Название4", "Автор4", 4)
+            Book("Сборник стихов о Любви", "И. Петров", 5),
+            Book("Кошки мышки", "Г. Иванова", 5),
+            Book("Детство", "П. Каценович", 4),
+            Book("Страшные истории", "А. Зибар", 4),
+            Book("Воробей", "Д. Кац", 4),
+            Book("Осень", "Ф. Зивина", 3),
+            Book("Море", "А. Куков", 3),
+            Book("Полет", "Ф. Попов", 2),
+            Book("Радость", "У. Радов", 1),
         )
+
+        val list = listOf<Int> (
+            R.drawable.bbb1,
+            R.drawable.bbb2,
+            R.drawable.bbb3,
+            R.drawable.bbb4,
+            R.drawable.bbb5,
+            R.drawable.bbb6,
+            R.drawable.bbb7,
+            R.drawable.bbb8,
+            R.drawable.bbb9
+        )
+
         binding.recycler.layoutManager = GridLayoutManager(this.requireContext(), 3)
-        binding.recycler.adapter = BookAdapter(books, this)
+        binding.recycler.adapter = BookAdapter(books, this, list)
     }
 
     override fun showBook(book: Book) {
-        startActivity(Intent(this.requireContext(), NewBookActivity::class.java))
+        startActivity(Intent(this.requireContext(), BookActivity::class.java))
     }
 }

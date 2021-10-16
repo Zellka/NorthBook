@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import com.example.northbook.R
 import com.example.northbook.databinding.FragmentProfileBinding
+import com.example.northbook.ui.events.AddEventActivity
 import com.example.northbook.ui.statistics.StatisticsActivity
 
 class ProfileFragment : Fragment() {
@@ -27,6 +28,10 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button_stat).setOnClickListener {
             startActivity(Intent(activity, StatisticsActivity::class.java))
+        }
+
+        view.findViewById<Button>(R.id.button_add_event).setOnClickListener {
+            startActivity(Intent(activity, AddEventActivity::class.java))
         }
     }
 

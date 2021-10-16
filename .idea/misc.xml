@@ -12,6 +12,7 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_menu.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_new_book.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_statistics.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_add_event.xml" value="0.1213768115942029" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_books.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_check.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_creation.xml" value="0.1" />
@@ -22,7 +23,7 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_new_book.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_news.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_plans.xml" value="0.1" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_recom.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_registration.xml" value="0.16" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_trends.xml" value="0.1" />
