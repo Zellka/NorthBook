@@ -4,37 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ic_goal"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/name_book"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
         android:text="Название"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/ic_goal"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/author_book"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
         android:text="Автор"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/ic_goal"
         app:layout_constraintTop_toBottomOf="@+id/name_book"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/goal_read"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
         android:text="10 страниц в день"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/ic_goal"
         app:layout_constraintTop_toBottomOf="@+id/author_book"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/goal_time"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
         android:text="За 35 дней"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/ic_goal"
         app:layout_constraintTop_toBottomOf="@+id/goal_read"
         tools:ignore="MissingConstraints" />
 

@@ -1,69 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:paddingTop="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingBottom="50dp"
-    tools:context=".ui.menu.GoalFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/name_book"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Название"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/author_book"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Автор"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_book"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/goal_read"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10 страниц в день"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/author_book"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/goal_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="За 35 дней"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/goal_read"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btn_edit_goal"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Редактировать"
-        app:layout_constraintBottom_toTopOf="@+id/btn_remove_goal"
-        tools:ignore="MissingConstraints" />
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="50dp"
+        tools:context=".ui.menu.GoalFragment">
 
-    <Button
-        android:id="@+id/btn_remove_goal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Удалить"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/img_goal"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/book5"
+            tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/name_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_goal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/author_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Автор"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_book"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/goal_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="10 страниц в день"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/author_book"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/goal_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="За 35 дней"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goal_read"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_edit_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Редактировать"
+            app:layout_constraintTop_toBottomOf="@+id/goal_time"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_remove_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            app:layout_constraintTop_toBottomOf="@+id/btn_edit_goal"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
