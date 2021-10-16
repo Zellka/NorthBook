@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/drawable/ic_arrow_left.xml" value="0.1125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/drawable/ic_ava.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/drawable/launch_screen.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/activity_statistics.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_books.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_check.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_creation.xml" value="0.1" />
@@ -16,12 +18,13 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_input.xml" value="0.16" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_news.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_plans.xml" value="0.1" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_recom.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_registration.xml" value="0.16" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/fragment_trends.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/item_book.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/layout/item_genre.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/NorthBook/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
