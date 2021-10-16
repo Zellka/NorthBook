@@ -19,6 +19,5 @@
     <style name="Theme.NorthBook.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NorthBook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
 </resources>
 

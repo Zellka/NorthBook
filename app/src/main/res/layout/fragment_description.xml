@@ -24,8 +24,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Название"
+            android:padding="5dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textSize="22sp"
             app:layout_constraintTop_toBottomOf="@+id/img_book"
             tools:ignore="MissingConstraints" />
 
@@ -34,8 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Автор"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:padding="5dp"
+            android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/name_book"
             tools:ignore="MissingConstraints" />
 
@@ -45,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
+            android:padding="5dp"
             app:layout_constraintTop_toBottomOf="@+id/author_book"
             tools:ignore="MissingConstraints" />
 
@@ -52,6 +56,7 @@
             android:id="@+id/description_book"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:text="ллывпрыврп ывлпрыврп ывлпрылврп ылвп ылвпрылвп ывлпр ылвпывп ылвп ывпрылвп лвп лывпрлырп влп лывпрлып лып лыпрылп ып"
             android:textColor="@color/black"
             android:textSize="20sp"
