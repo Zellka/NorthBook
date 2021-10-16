@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/inputFragment"
-        android:name="com.example.northbook.InputFragment"
+        android:name="com.example.northbook.ui.registration.InputFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_input" >
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.example.northbook.RegistrationFragment"
+        android:name="com.example.northbook.ui.registration.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" >
         <action
@@ -31,12 +31,12 @@
     </fragment>
     <fragment
         android:id="@+id/endRegistrationFragment"
-        android:name="com.example.northbook.EndRegistrationFragment"
+        android:name="com.example.northbook.ui.registration.EndRegistrationFragment"
         android:label="fragment_end_registration"
         tools:layout="@layout/fragment_end_registration" />
     <fragment
         android:id="@+id/checkFragment"
-        android:name="com.example.northbook.CheckFragment"
+        android:name="com.example.northbook.ui.registration.CheckFragment"
         android:label="fragment_check"
         tools:layout="@layout/fragment_check" />
 </navigation>

@@ -11,11 +11,13 @@
     <string name="hint_search">Введите что-нибудь</string>
 
     <string name="tab_genres">Жанры</string>
-    <string name="tab_recom">Рекомендации</string>
+    <string name="tab_recom">Для тебя</string>
     <string name="tab_trends">Тренды</string>
     <string name="title_activity_book">BookActivity</string>
     <string name="tab_description">Описание</string>
     <string name="tab_review">Рецензии</string>
+    <string name="chit_work">Работы читателей</string>
+    <string name="my_work">Мои работы</string>
     <string name="btn_to_book">Забронировать</string>
     <string name="title_add">Добавить</string>
     <string name="your_review">Ваша рецензия</string>

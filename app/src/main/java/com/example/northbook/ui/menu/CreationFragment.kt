@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.northbook.adapter.CreatPagerAdapter
+import com.example.northbook.adapter.SectionPagerAdapter
 import com.example.northbook.databinding.FragmentCreationBinding
 
 class CreationFragment : Fragment() {
@@ -21,9 +23,12 @@ class CreationFragment : Fragment() {
     ): View {
         _binding = FragmentCreationBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.viewPager.adapter = CreatPagerAdapter(this.requireContext(), childFragmentManager)
+        binding.tabsC.setupWithViewPager(binding.viewPager)
     }
 
     override fun onDestroyView() {

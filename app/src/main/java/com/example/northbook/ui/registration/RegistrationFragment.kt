@@ -1,4 +1,4 @@
-package com.example.northbook
+package com.example.northbook.ui.registration
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toolbar
 import androidx.navigation.fragment.findNavController
+import com.example.northbook.R
 
 
 class RegistrationFragment : Fragment() {

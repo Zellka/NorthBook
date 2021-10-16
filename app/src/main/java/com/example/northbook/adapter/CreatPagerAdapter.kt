@@ -6,20 +6,21 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.northbook.R
 import com.example.northbook.ui.book.DescriptionFragment
-import com.example.northbook.ui.book.ReviewFragment
+import com.example.northbook.ui.creat.MyWorkFragment
+import com.example.northbook.ui.creat.WorksReadersFragment
 
 private val TAB_TITLES = arrayOf(
-    R.string.tab_description,
-    R.string.tab_review
+    R.string.chit_work,
+    R.string.my_work
 )
 
-class BookPagerAdapter(private val context: Context, fm: FragmentManager) :
+class CreatPagerAdapter(private val context: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            0 -> DescriptionFragment()
-            else -> ReviewFragment()
+            0 -> WorksReadersFragment()
+            else -> MyWorkFragment()
         }
     }
 
