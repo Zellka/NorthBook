@@ -10,8 +10,8 @@ import com.example.northbook.ui.category.RecomFragment
 import com.example.northbook.ui.category.TrendsFragment
 
 private val TAB_TITLES = arrayOf(
-    R.string.tab_recom,
     R.string.tab_genres,
+    R.string.tab_recom,
     R.string.tab_trends
 )
 
