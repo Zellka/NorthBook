@@ -15,6 +15,6 @@
 ![скоро будет]()
 
 # Authors: 
-![Ilona Zelinskaya](https://github.com/Zellka)
+[Ilona Zelinskaya](https://github.com/Zellka)
 
-![Sonya Proskurina](https://github.com/Sonya-Proskurina)
+[Sonya Proskurina](https://github.com/Sonya-Proskurina)
