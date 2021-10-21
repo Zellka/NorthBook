@@ -11,8 +11,6 @@
 ![](https://github.com/Zellka/NorthBook/blob/master/2.png)
 ![](https://github.com/Zellka/NorthBook/blob/master/3.png)
 
-# App preview
-![скоро будет]()
 
 # Authors: 
 [Ilona Zelinskaya](https://github.com/Zellka)
