@@ -1,4 +1,4 @@
-# NorthBook
+
 ![](https://github.com/Zellka/NorthBook/blob/master/logo.png)
 
 Часть проекта для хакатона на Полярном круге 3.0.
@@ -16,4 +16,5 @@
 
 # Authors: 
 Ilona Zelinskaya
+
 Sonya Proskurina
