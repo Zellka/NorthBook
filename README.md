@@ -16,3 +16,6 @@
 [Ilona Zelinskaya](https://github.com/Zellka)
 
 [Sonya Proskurina](https://github.com/Sonya-Proskurina)
+
+
+[Winner certificate](https://github.com/Zellka/NorthBook/blob/master/winner_certificate.png)
